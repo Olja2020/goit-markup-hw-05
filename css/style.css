@@ -650,7 +650,6 @@ header {
   > .review-form-own-checkbox {
   background-color: #404bbf;
 }
-
 .form_modal_input_checkbox:checked
   + .form_modal_label_checkbox
   .form_modal_input_icon_checkbox {
@@ -666,7 +665,6 @@ header {
   fill: #ffffff;
   opacity: 0;
 }
-
 .form_modal_input_checkbox:checked
   + .form_modal_label_checkbox
   .form_modal_input_icon_checkbox {

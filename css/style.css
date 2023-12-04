@@ -410,10 +410,11 @@ header {
 .social-link:focus {
   background-color: #404bbf;
 }
-.footer_social_links {
-  gap: 16px;
-}
 
+.li_footer {
+  margin-left: 16px;
+  display: block;
+}
 .img_portfolio {
   position: relative;
   overflow: hidden;
@@ -450,7 +451,9 @@ header {
   cursor: pointer;
   font-family: "Roboto", sans-serif;
 }
-
+.footer_social_links {
+  gap: 0;
+}
 .footer_form {
   display: flex;
   justify-content: space-between;
@@ -471,13 +474,14 @@ header {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   font-size: 12px;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 2;
   letter-spacing: 0.04em;
   text-align: left;
   background-color: transparent;
   color: #ffffff;
   border: 1px solid #ffffff;
   border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .subscribe {
   margin-bottom: 16px;
@@ -664,10 +668,14 @@ header {
   border: none;
   min-width: 169px;
   height: 56px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
+}
+.review-form-submit-btn:hover,
+.review-form-submit-btn:focus {
+  background-color: #404bbf;
 }
 .review-form-own-checkbox {
   width: 16px;
@@ -681,10 +689,10 @@ header {
   margin-right: 8px;
   font-family: "Roboto", sans-serif;
   cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form_modal_label_checkbox {
   margin-bottom: 24px;
@@ -722,15 +730,13 @@ header {
   .form_modal_input_icon_checkbox {
   opacity: 1;
 }
-.form_modal_wrapper {
-  margin-bottom: 16px;
-}
+
 .form_modal_input_wrapper_checkbox {
   margin-bottom: 24px;
 }
-.form_modal_wraper {
+.form_modal_wrapper {
   margin-bottom: 8px;
 }
-.form_modal_wrapper: not(last-child) {
-  margin-bottom: 8px;
+.form_modal_wrapper.comment {
+  margin-bottom: 16px;
 }

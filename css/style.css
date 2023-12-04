@@ -412,8 +412,8 @@ header {
 }
 
 .li_footer {
-  margin-left: 16px;
   display: block;
+  margin-left: 16px;
 }
 .img_portfolio {
   position: relative;
@@ -434,7 +434,6 @@ header {
   height: 40px;
   padding: 8px 24px 8px 24px;
   border-radius: 4px;
-  gap: 16px;
   background-color: #4d5ae5;
   display: flex;
   color: #ffffff;
@@ -739,4 +738,7 @@ header {
 }
 .form_modal_wrapper.comment {
   margin-bottom: 16px;
+}
+.icon_footer.button_icon_footer {
+  margin-left: 16px;
 }
